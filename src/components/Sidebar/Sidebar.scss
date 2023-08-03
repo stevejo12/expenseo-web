@@ -1,0 +1,41 @@
+$icon-gap: 20px;
+
+.sidebar {
+  background-color: black;
+  color: white;
+  padding: var(--padding-topBottom-menu-default) var(--padding-leftRight-menu-default);
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    font-size: var(--font-size-title);
+    padding: 10px 0;
+  }
+
+  &-topMenu, &-bottomMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    
+    &-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+
+      &:not(:last-child) {
+        margin-bottom: $icon-gap;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-topMenu {
+    flex: 1;
+  }
+}

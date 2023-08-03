@@ -1,13 +1,19 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
+import Sidebar from './components/Sidebar/Sidebar';
 
 import './App.css';
+import Expenses from './components/Expenses/Expenses';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: [<Sidebar />, <Home />]
+  },
+  {
+    path: "/expenses",
+    element: [<Sidebar />, <Expenses />]
   }
 ])
 
@@ -15,7 +21,7 @@ const router = createBrowserRouter([
 // https://reactrouter.com/en/main/start/tutorial
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <RouterProvider router={router} />
     </div>
   );

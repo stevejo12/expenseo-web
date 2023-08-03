@@ -10,6 +10,13 @@
   --tertiary-color: rgb(130,205,71);
   --yellow-color: rgb(240,255,66);
   --light-grey: rgb(225,225,225);
+
+  --padding-topBottom-menu-default: 10px;
+  --padding-leftRight-menu-default: 20px;
+
+  --padding-mainMenu: 20px;
+
+  --font-size-title: 2rem;
 }
 
 html {
