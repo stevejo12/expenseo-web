@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
 import "./Home.scss";
-import Sidebar from '../Sidebar/Sidebar';
 
 // Reference
 // https://quickbooks.intuit.com/accountants/products-solutions/accounting/quickbooks-online/
